@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+
+    <!-- My Own Style -->
+    <link defer rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link defer rel="preconnect" href="https://fonts.googleapis.com">
+    <link defer rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link defer href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1>Bookshelf App</h1>
+            <p>
+                Welcome to Bookshelf App, the perfect place to organize, search, <br>and keep track of the books you've read or plan to read!
+            </p>
+          </div>
+        <nav>
+            <ul>
+                <li class="search-bar">
+                    <form id="searchBook" data-testid="searchBookForm">
+                    <label for="searchBookTitle"></label>
+                    <input id="searchBookTitle" type="text" placeholder="Search book title" data-testid="searchBookFormTitleInput">
+                    <button id="searchSubmit" type="submit" data-testid="searchBookFormSubmitButton">Search</button>
+                  </form>
+                </li>
+                <li><button class="btn-show-modal" id="show-modal">+ Add Book</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+
+            <!-- Modal -->
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add book to read</h2>
+                    <button class="modal-close" id="close-modal">&times;</button>
+                </div>
+                <form class="form" id="bookForm" data-testid="bookForm">
+                    <div class="form-group form-title">
+                        <label for="bookFormTitle">Title</label>
+                        <input type="text" id="bookFormTitle" name="title" required data-testid="bookFormTitleInput">
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="bookFormAuthor">Author</label>
+                        <input id="bookFormAuthor" type="text" required data-testid="bookFormAuthorInput" />
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="number">Year</label>
+                        <input type="number" id="bookFormYear" name="date" required data-testid="bookFormYearInput">
+                    </div>
+                    <div class="form-group form-title form-isComplete">
+                        <input
+                        id="bookFormIsComplete"
+                        type="checkbox"
+                        data-testid="bookFormIsCompleteCheckbox"
+                        /> <br>
+                        <label for="bookFormIsComplete">Please check if it has been read</label>
+                    </div>
+                    <button type="submit" value="Submit" name="Submit" class="btn-submit" id="bookFormIsComplete" data-testid="bookFormSubmitButton">Submit</button>
+                </form>
+                </div>
+            </div><br>
+            
+            <article class="card">
+                <div class="container">
+                    <h2 class="container-header">Unread Books</h2>
+                    <div class="list-item" id="todos" data-testid="incompleteBookList"></div>
+                  </div>
+            </article>
+
+            
+        </div>
+
+        <aside>
+            <br><br>
+            <article class="card">
+                <div class="container">
+                    <div class="container">
+                        <h2 class="container-header">Readed Books</h2>
+                        <div class="list-item" id="completed-todos" data-testid="completeBookList"></div>
+                      </div>
+                </div>
+            </article>
+        </aside>
+    </main>
+    <br>
+    <footer>
+        <p>Powered by echan &#169; 2024</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+
+    
+</body>
+</html>
