@@ -31,11 +31,11 @@ Bookshelf App is a simple web application designed to help users organize, searc
 ## Project Structure
 ```
 bookshelf-app/
-│── index.html          # Main HTML file
 │── css/
 │   └── style.css       # Stylesheet
 │── js/
 │   └── script.js       # JavaScript logic
+│── index.html          # Main HTML file
 └── README.md           # Project documentation
 ```
 
