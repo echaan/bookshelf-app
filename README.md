@@ -1,38 +1,50 @@
-# Bookshelf App Starter Project
+# Bookshelf App
 
-Ini adalah starter project untuk siswa yang sedang mengerjakan tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula.
+## Description
+Bookshelf App is a simple web application designed to help users organize, search, and keep track of the books they have read or plan to read. This application provides features for adding books, categorizing them as "Unread" or "Read," and storing the data locally using the browser's local storage.
 
-## Ketentuan Pengerjaan Tugas
+## Features
+- Add books with title, author, and year information.
+- Mark books as "Read" or "Unread."
+- Search for books by title.
+- Remove books from the list.
+- Data persistence using local storage.
 
-Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentuan-ketentuan berikut dalam mengerjakan tugas ini.
+## Technologies Used
+- HTML
+- CSS
+- JavaScript (Vanilla JS)
+- Local Storage
+- Google Fonts
 
-- Anda dilarang mengedit atau menghapus atribut `data-testid` pada elemen-elemen HTML.
-- Ini masih berkaitan dengan poin sebelumnya. Jika Anda memiliki kebutuhan seperti styling elemen dan perlu menambahkan atribut seperti class, itu tidak dilarang selama atribut `data-testid` beserta nilainya tidak diubah atau dihapus.
-- Dalam menampilkan data-data buku, Anda wajib memberikan beberapa atribut pada setiap elemennya.
+## Installation and Usage
+### Prerequisites
+- A web browser (Google Chrome, Mozilla Firefox, Edge, etc.)
 
-  - `data-bookid`: menampung nilai ID masing-masing buku.
-  - `data-testid`: penanda jenis data buku yang ditampilkan. Berikut daftarnya.
-    - `bookItem`: elemen kontainer yang menampung data-data buku.
-    - `bookItemTitle`: judul buku
-    - `bookItemAuthor`: penulis buku
-    - `bookItemYear`: tahun rilis buku
-    - `bookItemIsCompleteButton`: tombol untuk mengubah kondisi buku dari “Belum selesai dibaca” menjadi “Selesai dibaca” atau sebaliknya.
-    - `bookItemDeleteButton`: tombol untuk menghapus buku.
-    - `bookItemEditButton`: tombol untuk mengubah data buku.
+### Steps to Run the Application
+1. Clone this repository or download the project files.
+2. Open `index.html` in your preferred web browser.
+3. Use the search bar to look for books by title.
+4. Click on "+ Add Book" to add a new book.
+5. Mark books as read/unread or delete them as needed.
 
-  Agar pengerjaan tugas lebih mudah, Anda dapat mengikuti templat buku berikut.
-
-```html
-<div data-bookid="{{ ID_buku }}" data-testid="bookItem">
-  <h3 data-testid="bookItemTitle">{{ judul_buku }}</h3>
-  <p data-testid="bookItemAuthor">Penulis: {{ penulis_buku }}</p>
-  <p data-testid="bookItemYear">Tahun: {{ tahun_rilis_buku }}</p>
-  <div>
-    <button data-testid="bookItemIsCompleteButton">{{ tombol_untuk_ubah_kondisi }}</button>
-    <button data-testid="bookItemDeleteButton">{{ tombol_untuk_hapus }}</button>
-    <button data-testid="bookItemEditButton">{{ tombol_untuk_edit }}</button>
-  </div>
-</div>
+## Project Structure
+```
+bookshelf-app/
+│── index.html          # Main HTML file
+│── css/
+│   └── style.css       # Stylesheet
+│── js/
+│   └── script.js       # JavaScript logic
+└── README.md           # Project documentation
 ```
 
-Selamat mengerjakan dan sukses selalu!
+## Local Storage Implementation
+Books are stored in local storage under the key `BOOKSHELF_APP (M. Eric Chaniago)`, ensuring that data persists even after refreshing or closing the browser.
+
+## Developer
+This project was developed by **M. Eric Chaniago**.
+
+## License
+This project is open-source and free to use.
+
