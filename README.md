@@ -31,12 +31,13 @@ Bookshelf App is a simple web application designed to help users organize, searc
 ## Project Structure
 ```
 bookshelf-app/
+│── assets              # Directory for storing images and other assets
 │── css/
 │   └── style.css       # Stylesheet
 │── js/
 │   └── script.js       # JavaScript logic
-│── index.html          # Main HTML file
-└── README.md           # Project documentation
+│── README.md           # Project documentation
+└── index.html          # Main HTML file
 ```
 
 ## Local Storage Implementation
