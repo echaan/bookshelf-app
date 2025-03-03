@@ -3,6 +3,9 @@
 ## Description
 Bookshelf App is a simple web application designed to help users organize, search, and keep track of the books they have read or plan to read. This application provides features for adding books, categorizing them as "Unread" or "Read," and storing the data locally using the browser's local storage.
 
+## Live Demo
+The website is deployed and accessible at: [https://echaan.github.io/bookshelf-app/](https://echaan.github.io/bookshelf-app/)
+
 ## Features
 - Add books with title, author, and year information.
 - Mark books as "Read" or "Unread."
